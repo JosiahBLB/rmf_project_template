@@ -1,0 +1,4 @@
+[submodule "src/fyp_assets/turtlebot3"]
+	path = src/fyp_assets/turtlebot3
+	url = https://github.com/aws-robotics/turtlebot3-description-reduced-mesh.git
+	branch = ros2
