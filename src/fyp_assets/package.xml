@@ -3,8 +3,8 @@
 <package format="3">
   <name>fyp_assets</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="josiah@todo.todo">josiah</maintainer>
+  <description>Assets used in the final year project</description>
+  <maintainer email="josiahbrough@gmail.com">Josiah</maintainer>
   <license>MIT-0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
