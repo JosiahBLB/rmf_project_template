@@ -1,5 +1,69 @@
-[submodule "src/fyp_assets/turtlebot3"]
-	path = src/fyp_assets/turtlebot3
+[submodule "src/rmf/rmf_battery"]
+	path = src/rmf/rmf_battery
+	url = https://github.com/open-rmf/rmf_battery.git
+	branch = humble
+[submodule "src/rmf/rmf_internal_msgs"]
+	path = src/rmf/rmf_internal_msgs
+	url = https://github.com/open-rmf/rmf_internal_msgs.git
+	branch = humble
+[submodule "src/rmf/rmf_api_msgs"]
+	path = src/rmf/rmf_api_msgs
+	url = https://github.com/open-rmf/rmf_api_msgs.git
+	branch = humble
+[submodule "src/rmf/rmf_ros2"]
+	path = src/rmf/rmf_ros2
+	url = https://github.com/open-rmf/rmf_ros2.git
+	branch = humble
+[submodule "src/rmf/rmf_task"]
+	path = src/rmf/rmf_task
+	url = https://github.com/open-rmf/rmf_task.git
+	branch = humble
+[submodule "src/rmf/rmf_traffic"]
+	path = src/rmf/rmf_traffic
+	url = https://github.com/open-rmf/rmf_traffic.git
+	branch = humble
+[submodule "src/rmf/rmf_utils"]
+	path = src/rmf/rmf_utils
+	url = https://github.com/open-rmf/rmf_utils.git
+	branch = humble
+[submodule "src/rmf/ament_cmake_catch2"]
+	path = src/rmf/ament_cmake_catch2
+	url = https://github.com/open-rmf/ament_cmake_catch2.git
+	branch = humble
+[submodule "src/rmf/rmf_visualization"]
+	path = src/rmf/rmf_visualization
+	url = https://github.com/open-rmf/rmf_visualization.git
+	branch = humble
+[submodule "src/rmf/rmf_visualization_msgs"]
+	path = src/rmf/rmf_visualization_msgs
+	url = https://github.com/open-rmf/rmf_visualization_msgs.git
+	branch = humble
+[submodule "src/rmf/rmf_building_map_msgs"]
+	path = src/rmf/rmf_building_map_msgs
+	url = https://github.com/open-rmf/rmf_building_map_msgs.git
+	branch = humble
+[submodule "src/rmf/rmf_simulation"]
+	path = src/rmf/rmf_simulation
+	url = https://github.com/open-rmf/rmf_simulation.git
+	branch = humble
+[submodule "src/rmf/rmf_traffic_editor"]
+	path = src/rmf/rmf_traffic_editor
+	url = https://github.com/open-rmf/rmf_traffic_editor.git
+	branch = humble
+[submodule "src/thirdparty/menge_vendor"]
+	path = src/thirdparty/menge_vendor
+	url = https://github.com/open-rmf/menge_vendor.git
+	branch = humble
+[submodule "src/thirdparty/nlohmann_json_schema_validator_vendor"]
+	path = src/thirdparty/nlohmann_json_schema_validator_vendor
+	url = https://github.com/open-rmf/nlohmann_json_schema_validator_vendor.git
+	branch = humble
+[submodule "src/thirdparty/pybind11_json_vendor"]
+	path = src/thirdparty/pybind11_json_vendor
+	url = https://github.com/open-rmf/pybind11_json_vendor.git
+	branch = humble
+[submodule "src/fyp/fyp_assets/turtlebot3"]
+	path = src/fyp/fyp_assets/turtlebot3
 	url = https://github.com/aws-robotics/turtlebot3-description-reduced-mesh.git
 	branch = ros2
 [submodule "src/rmf/rmf_battery"]
