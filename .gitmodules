@@ -62,10 +62,6 @@
 	path = src/thirdparty/pybind11_json_vendor
 	url = https://github.com/open-rmf/pybind11_json_vendor.git
 	branch = humble
-[submodule "src/fyp/fyp_assets/turtlebot3"]
-	path = src/fyp/fyp_assets/turtlebot3
-	url = https://github.com/aws-robotics/turtlebot3-description-reduced-mesh.git
-	branch = ros2
 [submodule "src/rmf/rmf_battery"]
 	path = src/rmf/rmf_battery
 	url = https://github.com/open-rmf/rmf_battery.git
@@ -130,3 +126,7 @@
 	path = src/thirdparty/pybind11_json_vendor
 	url = https://github.com/open-rmf/pybind11_json_vendor.git
 	branch = humble
+[submodule "src/fyp/fyp_assets/models/turtlebot3"]
+	path = src/fyp/fyp_assets/models/turtlebot3
+	url = https://github.com/aws-robotics/turtlebot3-description-reduced-mesh.git
+	branch = ros2
