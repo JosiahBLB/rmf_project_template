@@ -16,6 +16,11 @@ Build the project
 colcon build --mixin release lld
 ```
 
+Source the project
+```sh  
+source install/setup.bash
+```
+
 Launch the world
 ```sh
 ros2 launch fyp_gz_classic simple_warehouse.launch.xml
