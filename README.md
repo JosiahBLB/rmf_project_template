@@ -1,5 +1,10 @@
 # Final Year Project
 
+## Dependencies
+```sh
+# TODO: add dependencies
+```
+
 ## Setup
 Initialise and download the submodules
 ```sh
