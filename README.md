@@ -6,7 +6,7 @@
 ```
 
 ## Setup
-Initialise and download the submodules
+Initialize and download the submodules
 ```sh
  git submodule update --init --recursive
 ```
