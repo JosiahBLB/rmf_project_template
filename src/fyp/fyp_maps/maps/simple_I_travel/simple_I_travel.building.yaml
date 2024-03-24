@@ -1,0 +1,79 @@
+coordinate_system: reference_image
+crowd_sim:
+  agent_groups:
+    - {agents_name: [tinyRobot1, tinyRobot2], agents_number: 2, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+  agent_profiles:
+    - {ORCA_tau: 1, ORCA_tauObst: 0.40000000000000002, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
+  enable: 0
+  goal_sets: []
+  model_types: []
+  obstacle_set: {class: 1, file_name: L1_navmesh.nav, type: nav_mesh}
+  states:
+    - {final: 1, goal_set: -1, name: external_static, navmesh_file_name: ""}
+  transitions: []
+  update_time_step: 0.10000000000000001
+graphs:
+  {}
+levels:
+  L1:
+    doors:
+      - [2, 16, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, west_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_hinged]}]
+      - [17, 5, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, 1], name: [1, east_door], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, double_hinged]}]
+    drawing:
+      filename: fyp_I_travel_only_path.png
+    elevation: 0
+    floors:
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [6, 9, 8, 7]
+    lanes:
+      - [10, 11, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [11, 12, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [11, 13, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [13, 14, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [13, 15, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [18, 19, {bidirectional: [4, false], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [19, 20, {bidirectional: [4, false], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [20, 21, {bidirectional: [4, false], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [21, 18, {bidirectional: [4, false], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [18, 10, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], mutex: [1, ""], orientation: [1, ""], speed_limit: [3, 0]}]
+    layers:
+      {}
+    measurements:
+      - [0, 1, {distance: [3, 15.6]}]
+    models:
+      - {dispensable: false, model_name: OpenRobotics/SquareShelf, name: OpenRobotics/SquareShelf, static: true, x: 816.79700000000003, y: 1545.576, yaw: -3.1084999999999998, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/SquareShelf, name: OpenRobotics/SquareShelf, static: true, x: 2320.125, y: 524.58100000000002, yaw: -3.1383000000000001, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/TruckBox, name: OpenRobotics/TruckBox, static: true, x: 1860.5740000000001, y: 668.33699999999999, yaw: 3.1206, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/TruckBox, name: OpenRobotics/TruckBox, static: true, x: 1872.7760000000001, y: 1412.1780000000001, yaw: -3.133, z: 0}
+    vertices:
+      - [126.604, 127.752, 0, ""]
+      - [2967.0839999999998, 127.752, 0, ""]
+      - [668.03099999999995, 1958.3330000000001, 0, ""]
+      - [115.13800000000001, 1957.6120000000001, 0, ""]
+      - [2977.2330000000002, 1957.328, 0, ""]
+      - [2230.944, 1958.0060000000001, 0, ""]
+      - [1.258, 2.5059999999999998, 0, ""]
+      - [4.3710000000000004, 2200.04, 0, ""]
+      - [3086.6039999999998, 2201.547, 0, ""]
+      - [3091.6700000000001, 4.3630000000000004, 0, ""]
+      - [826.024, 639.53599999999994, 0, tinyRobot1_charger, {is_charger: [4, true], is_holding_point: [4, true], is_parking_spot: [4, true], spawn_robot_name: [1, tinyRobot1], spawn_robot_type: [1, TinyRobot]}]
+      - [824.92100000000005, 1046.4570000000001, 0, ""]
+      - [824.85500000000002, 1453.5889999999999, 0, tinyRobot2_charger, {is_charger: [4, false], is_parking_spot: [4, false], pickup_dispenser: [1, boxes_dispenser], spawn_robot_name: [1, tinyRobot2], spawn_robot_type: [1, TinyRobot]}]
+      - [2320.3380000000002, 1044.617, 0, ""]
+      - [2322.5680000000002, 637.66999999999996, 0, p0, {dropoff_ingestor: [1, box_drop2]}]
+      - [2324.5059999999999, 1453.28, 0, p1, {dropoff_ingestor: [1, box_drop1]}]
+      - [1035.518, 1958.098, 0, ""]
+      - [1870.9649999999999, 1958.527, 0, ""]
+      - [391.18000000000001, 348.25700000000001, 0, ""]
+      - [2664.3310000000001, 319.072, 0, ""]
+      - [2622.1759999999999, 1732.9010000000001, 0, ""]
+      - [384.69499999999999, 1749.115, 0, p2]
+    walls:
+      - [2, 3, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [3, 0, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [0, 1, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [1, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [4, 5, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+      - [5, 2, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
+lifts: {}
+name: simple_I_travel
