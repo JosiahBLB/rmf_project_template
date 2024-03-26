@@ -79,6 +79,3 @@ levels:
       - [0, 1, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
 lifts: {}
 name: simple_warehouse
-parameters:
-  generate_crs: [1, ""]
-reference_level_name: L1
