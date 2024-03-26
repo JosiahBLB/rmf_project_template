@@ -9,14 +9,22 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rmf_building_map_tools</depend>
-  <depend>fyp_maps</depend>
-  <depend>rmf_traffic_ros2</depend>
-  <depend>rmf_fleet_adapter</depend>
-  <depend>rmf_visualization</depend>
+  <exec_depend>fyp_maps</exec_depend>
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+  <exec_depend>rmf_traffic_ros2</exec_depend>
+  <exec_depend>rmf_task_ros2</exec_depend>
+  <exec_depend>rmf_fleet_adapter</exec_depend>
+  <exec_depend>rmf_building_map_tools</exec_depend>
+
+  <exec_depend>rmf_visualization</exec_depend>
+
+  <exec_depend>fyp_assets</exec_depend>
+  <exec_depend>fyp_tasks</exec_depend>
+  <!-- <exec_depend>fyp_panel</exec_depend> -->
+  <exec_depend>fyp_fleet_adapter</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <exec_depend>launch_xml</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

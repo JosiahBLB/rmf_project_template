@@ -1,0 +1,5 @@
+<?xml version='1.0' ?>
+<launch>
+  <executable cmd="ros2 run fyp_tasks dispatch_patrol -p tinyRobot1_charger p0 -n 1 --use_sim_time" output="both"/>
+  <executable cmd="ros2 run fyp_tasks dispatch_patrol -p tinyRobot2_charger p1 -n 1 --use_sim_time" output="both"/>
+</launch>
