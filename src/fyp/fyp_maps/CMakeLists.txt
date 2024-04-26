@@ -1,9 +1,6 @@
-cmake_minimum_required(VERSION 3.8)
-project(fyp_maps)
+cmake_minimum_required(VERSION 3.5)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
+project(fyp_maps)
 
 find_package(ament_cmake REQUIRED)
 
@@ -11,6 +8,8 @@ install(DIRECTORY
   maps/
   DESTINATION share/${PROJECT_NAME}
 )
+
+ament_package()
 
 file(GLOB_RECURSE traffic_editor_paths "maps/*.building.yaml")
 
@@ -37,15 +36,11 @@ foreach(path ${traffic_editor_paths})
       COMMAND ros2 run rmf_building_map_tools building_map_generator gazebo ${map_path} ${output_world_path} ${output_model_dir}
       OUTPUT ${output_world_path}
     )
-
-    # TODO: Add the else statement to specify custom models
   else()
     message("DOWNLOADING MODELS WITH COMMAND: ros2 run rmf_building_map_tools building_map_model_downloader ${map_path}")
     add_custom_command(
       DEPENDS ${map_path}
       COMMAND ros2 run rmf_building_map_tools building_map_generator gazebo ${map_path} ${output_world_path} ${output_model_dir}
-
-      # NOTE: models are being downloaded to ~/.gazebo/models
       COMMAND ros2 run rmf_building_map_tools building_map_model_downloader ${map_path} -e ~/.gazebo/models
       OUTPUT ${output_world_path}
     )
@@ -53,9 +48,6 @@ foreach(path ${traffic_editor_paths})
 
   ##############################################################################
   # generate the navmesh and required files for crowd simulation for gz
-  ##############################################################################
-  # BUG: Missleading title, this is required to generate the gazebo world
-
   set(crowd_sim_config_resource ${output_dir}/config_resource/)
 
   add_custom_command(
@@ -87,8 +79,6 @@ foreach(path ${traffic_editor_paths})
 
   ##############################################################################
   # generate the navmesh and required files for crowd simulation for ign
-  ##############################################################################
-
   add_custom_command(
     OUTPUT ${world_name}_crowdsim_ign
     COMMAND ros2 run rmf_building_map_tools building_crowdsim ${map_path} ${crowd_sim_config_resource} ${ign_output_world_path}
@@ -111,7 +101,6 @@ foreach(path ${traffic_editor_paths})
 
   set(output_nav_graphs_dir ${output_dir}/nav_graphs/)
   set(output_nav_graphs_phony ${output_nav_graphs_dir}/phony)
-  message("GENERATING NAV GRAPHS WITH COMMAND: ros2 run rmf_building_map_tools building_map_generator nav ${map_path} ${output_nav_graphs_dir}")
   add_custom_command(
     OUTPUT ${output_nav_graphs_phony}
     COMMAND ros2 run rmf_building_map_tools building_map_generator nav ${map_path} ${output_nav_graphs_dir}
@@ -128,17 +117,3 @@ foreach(path ${traffic_editor_paths})
   )
 
 endforeach()
-
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
-
-ament_package()
