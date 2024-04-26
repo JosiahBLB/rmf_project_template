@@ -1,0 +1,50 @@
+{
+  "world_name" : "Simple Warehouse",  
+  "valid_task": ["Delivery", "Loop"],
+  "task": {
+    "Delivery": {
+      "option": {
+        "inbound_to_storage_west": {
+          "pickup_place_name": "inbound_staging_pickup",
+          "pickup_dispenser": "inbound_pallet_dispenser",
+          "dropoff_place_name": "storage_west",
+          "dropoff_ingestor": "storage_west_ingestor"
+        },
+        "inbound_to_storage_east": {
+          "pickup_place_name": "inbound_staging_pickup",
+          "pickup_dispenser": "inbound_pallet_dispenser",
+          "dropoff_place_name": "storage_east",
+          "dropoff_ingestor": "storage_east_ingestor"
+        },
+        "storage_east_to_outbound": {
+          "pickup_place_name": "storage_east",
+          "pickup_dispenser": "storage_east_dispenser",
+          "dropoff_place_name": "outbound_staging_dropoff",
+          "dropoff_ingestor": "outbound_pallet_ingestor"
+        },
+        "storage_west_to_outbound": {
+          "pickup_place_name": "storage_west",
+          "pickup_dispenser": "storage_west_dispenser",
+          "dropoff_place_name": "outbound_staging_dropoff",
+          "dropoff_ingestor": "outbound_pallet_ingestor"
+        }
+      }
+    },
+    "Loop": {
+      "places": [
+        "storage_ne_corner",
+        "storage_se_corner",
+        "storage_sw_corner",
+        "storage_nw_corner"
+      ]
+    },
+    "Clean": {
+    },
+    "Station": {
+    },
+    "Patrol": {
+    },
+    "Charging": {
+    }
+  }
+}
