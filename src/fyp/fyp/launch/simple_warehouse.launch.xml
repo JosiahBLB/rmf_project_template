@@ -8,7 +8,7 @@
     <arg name="use_sim_time" value="$(var use_sim_time)"/>
     <arg name="viz_config_file" value ="$(find-pkg-share fyp)/include/simple_warehouse/simple_warehouse.rviz"/>
     <arg name="config_file" value="$(find-pkg-share fyp_maps)/simple_warehouse/simple_warehouse.building.yaml"/>
-    <!-- <arg name="dashboard_config_file" value="$(find-pkg-share fyp_dashboard_resources)/simple_warehouse/dashboard_config.json"/> -->
+    <arg name="dashboard_config_file" value="$(find-pkg-share fyp_dashboard_resources)/simple_warehouse/dashboard_config.json"/>
   </include>
 
   <!-- TinyRobot fleet adapter -->
@@ -19,5 +19,14 @@
       <arg name="config_file" value="$(find-pkg-share fyp)/config/simple_warehouse/tinyRobot_config.yaml"/>
     </include>
   </group>
+
+  <!-- DeliveryRobot fleet adapter -->
+  <group>
+    <include file="$(find-pkg-share fyp_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share fyp_maps)/maps/simple_warehouse/nav_graphs/0.yaml" />
+      <arg name="config_file" value="$(find-pkg-share fyp)/config/simple_warehouse/deliveryRobot_config.yaml"/>
+    </include>
+  </group> 
 
 </launch>

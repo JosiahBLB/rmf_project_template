@@ -20,7 +20,7 @@
 
   <exec_depend>fyp_assets</exec_depend>
   <exec_depend>fyp_tasks</exec_depend>
-  <!-- <exec_depend>fyp_panel</exec_depend> -->
+  <exec_depend>fyp_panel</exec_depend>
   <exec_depend>fyp_fleet_adapter</exec_depend>
   <exec_depend>rviz2</exec_depend>
 
