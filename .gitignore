@@ -1,4 +1,6 @@
 build/
 install/
 log/
-
+.rmf_schedule_node.yaml
+log.css
+web_server.log
