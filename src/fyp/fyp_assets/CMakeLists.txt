@@ -8,4 +8,9 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(
+  DIRECTORY models
+  DESTINATION $ENV{HOME}/.gazebo/models
+)
+
 ament_package()
