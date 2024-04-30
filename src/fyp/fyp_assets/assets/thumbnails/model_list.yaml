@@ -138,5 +138,6 @@ models:
 - Warehouse/shelfEmpty
 - Warehouse/pallet_wrapper
 - Warehouse/pallet_box_mobile
+- Warehouse/pallet
 actor_models:
 - OpenRobotics/MaleVisitorPhone

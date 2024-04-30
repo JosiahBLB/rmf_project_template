@@ -119,11 +119,11 @@ levels:
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 1983.644, y: 1678.9000000000001, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 1983.7909999999999, y: 1270.9459999999999, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 1863.3789999999999, y: 1270.9459999999999, yaw: 1.5708, z: 0}
-      - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 797.75199999999995, y: 1682.0119999999999, yaw: 1.5708, z: 0}
-      - {dispensable: false, model_name: OpenRobotics/TeleportIngestor, name: storage_west_ingestor, static: true, x: 796.26199999999994, y: 1589.8240000000001, yaw: 1.5708, z: 0.152}
-      - {dispensable: false, model_name: OpenRobotics/TeleportIngestor, name: storage_east_ingestor, static: true, x: 1449.934, y: 1587.3140000000001, yaw: 1.5708, z: 0.152}
-      - {dispensable: false, model_name: OpenRobotics/TeleportDispenser, name: storage_west_dispenser, static: true, x: 796.26199999999994, y: 1564.3599999999999, yaw: 1.5708, z: 0.152}
-      - {dispensable: false, model_name: OpenRobotics/TeleportDispenser, name: storage_east_dispenser, static: true, x: 1450.1769999999999, y: 1565.1780000000001, yaw: 1.5708, z: 0.152}
+      - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 797.85299999999995, y: 1679.0160000000001, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/TeleportIngestor, name: storage_west_ingestor, static: true, x: 796.26199999999994, y: 1589.8240000000001, yaw: 1.5708, z: 0.146401}
+      - {dispensable: false, model_name: OpenRobotics/TeleportIngestor, name: storage_east_ingestor, static: true, x: 1449.934, y: 1587.3140000000001, yaw: 1.5708, z: 0.146401}
+      - {dispensable: false, model_name: OpenRobotics/TeleportDispenser, name: storage_west_dispenser, static: true, x: 767.952, y: 1589.3869999999999, yaw: 1.5708, z: 0}
+      - {dispensable: false, model_name: OpenRobotics/TeleportDispenser, name: storage_east_dispenser, static: true, x: 1480.7639999999999, y: 1586.8299999999999, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: OpenRobotics/TeleportIngestor, name: outbound_pallet_ingestor, static: true, x: 2708.2950000000001, y: 1777.7660000000001, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: OpenRobotics/TeleportDispenser, name: inbound_pallet_dispenser, static: true, x: 873.72799999999995, y: 292.483, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 381.209, y: 1270.7619999999999, yaw: 1.5708, z: 0}
@@ -131,6 +131,13 @@ levels:
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 916.80200000000002, y: 1680.6279999999999, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 916.80200000000002, y: 1270.874, yaw: 1.5708, z: 0}
       - {dispensable: false, model_name: Warehouse/shelfEmpty, name: Warehouse/shelfEmpty, static: true, x: 797.75199999999995, y: 1270.874, yaw: 1.5708, z: 0}
+      - {dispensable: true, model_name: Warehouse/pallet, name: Warehouse/pallet, static: false, x: 92.429000000000002, y: 1000.814, yaw: 1.5708, z: 0}
+      - {dispensable: true, model_name: Warehouse/pallet, name: Warehouse/pallet, static: false, x: 92.429000000000002, y: 1000.814, yaw: 1.5708, z: 0.14999999999999999}
+      - {dispensable: true, model_name: Warehouse/pallet, name: Warehouse/pallet, static: false, x: 92.429000000000002, y: 1000.814, yaw: 1.5708, z: 0.29999999999999999}
+      - {dispensable: true, model_name: Warehouse/pallet, name: Warehouse/pallet, static: false, x: 92.429000000000002, y: 1000.814, yaw: 1.5708, z: 0.45000000000000001}
+      - {dispensable: true, model_name: Warehouse/pallet, name: Warehouse/pallet, static: false, x: 92.429000000000002, y: 1000.814, yaw: 1.5708, z: 0.59999999999999998}
+      - {dispensable: false, model_name: OpenRobotics/TeleportIngestor, name: pallet_stack_ingestor, static: true, x: 92.679000000000002, y: 1002.8579999999999, yaw: 1.5708, z: 1}
+      - {dispensable: false, model_name: OpenRobotics/TeleportDispenser, name: pallet_stack_dispenser, static: true, x: 120.658, y: 1002.8579999999999, yaw: 1.5708, z: 0}
     vertices:
       - [-20, 408, 0, ""]
       - [-20, 2080, 0, ""]
@@ -195,7 +202,7 @@ levels:
       - [2605, 300, 0, ""]
       - [1500, 450, 0, ""]
       - [1670, 450, 0, ""]
-      - [240, 1000, 0, storage_nw_corner]
+      - [240, 1000, 0, storage_nw_corner, {dropoff_ingestor: [1, pallet_stack_ingestor], is_parking_spot: [4, false], pickup_dispenser: [1, pallet_stack_dispenser]}]
       - [2250, 1900, 0, ""]
       - [2980, 1900, 0, ""]
       - [660, 196, 0, ""]
@@ -226,6 +233,11 @@ levels:
       - [2249.2150000000001, 1570, 0, ""]
       - [2180, 1570, 0, ""]
       - [1250, 470, 0, ""]
+      - [92.006, 1006.899, 0, ""]
+      - [93.685000000000002, 1003.5410000000001, 0, ""]
+      - [95.364000000000004, 1003.5410000000001, 0, ""]
+      - [91.338999999999999, 1007.5309999999999, 0, ""]
+      - [92.438999999999993, 1003.679, 0, ""]
     walls:
       - [2, 3, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]
       - [3, 4, {alpha: [3, 1], texture_height: [3, 2.5], texture_name: [1, default], texture_scale: [3, 1], texture_width: [3, 1]}]

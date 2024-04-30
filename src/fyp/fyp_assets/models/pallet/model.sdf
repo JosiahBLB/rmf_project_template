@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='pallet_box_mobile'>
+    <pose>0 0 0.01 0 0 0</pose>
+    <self_collide>false</self_collide>
+    <!-- BASE_LINK FRAME -->
+    <link name='pallet_base'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.4 0 0 0</pose>
+        <mass>20</mass> <!-- original value: 200 -->
+        <inertia>
+          <ixx>5</ixx> <!-- original value: 0.1 -->
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5</iyy> <!-- original value: 0.1 -->
+          <iyz>0</iyz>
+          <izz>5</izz> <!-- original value: 0.1 -->
+        </inertia>
+      </inertial>
+      <collision name="pallet_top_collision">
+        <pose>0 0 0.125 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.22 0.8 0.04</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.4</mu>
+              <mu2>0.4</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name="pallet_center_collision">
+        <pose>0 0 0.055 0 0 0</pose>
+        <geometry>
+          <box>
+            <!-- <size>1.22 0.1 0.1</size> Original collision -->
+            <size>1.22 0.8 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <!-- <collision name="pallet_left_collision">
+        <pose>0 -0.35 0.055 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.22 0.1 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="pallet_right_collision">
+        <pose>0 0.35 0.055 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.22 0.1 0.1</size>
+          </box>
+        </geometry>
+      </collision> -->
+      <visual name='pallet_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>meshes/pallet.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>0</static>
+  </model>
+</sdf>
