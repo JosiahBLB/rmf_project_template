@@ -135,7 +135,7 @@ models:
 - OpenRobotics/XRayMachine
 - OpenRobotics/XRayMachineSmall
 - Warehouse/shelf
-- Warehouse/shelfBig
+- Warehouse/shelfEmpty
 - Warehouse/pallet_wrapper
 - Warehouse/pallet_box_mobile
 actor_models:

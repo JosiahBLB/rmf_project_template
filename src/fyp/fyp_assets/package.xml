@@ -9,6 +9,9 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <!-- We are going to override files here, so we need it to build first -->
+  <buildtool_depend>rmf_traffic_editor_assets</buildtool_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>

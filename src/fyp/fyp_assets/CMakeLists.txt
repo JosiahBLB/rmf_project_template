@@ -8,10 +8,10 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-# Add models to the user's gazebo model path
+# Make assets available to the traffic editor
 install(
-  DIRECTORY models
-  DESTINATION $ENV{HOME}/.gazebo
+  DIRECTORY assets
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/../rmf_traffic_editor_assets/share
 )
 
 # Add models to the user's gazebo model path
