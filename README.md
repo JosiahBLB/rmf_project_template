@@ -20,7 +20,7 @@ Choose a name for your project
 export NEW_PRJ_NAME="wh_example"
 ```
 
-## Create and navigate to your ROS2 workspace
+Create and navigate to your ROS2 workspace
 ```sh
 git clone git@github.com:JosiahBLB/rmf_template.git ~/projects/"$NEW_PRJ_NAME"_ws
 cd ~/projects/"$NEW_PRJ_NAME"_ws
