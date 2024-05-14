@@ -15,6 +15,7 @@ See the [ROS2 Humble Hawksbill installation guide](https://docs.ros.org/en/humbl
 sudo apt install rename
 ```
 
+## Setup
 Choose a name for your project
 ```sh
 export NEW_PRJ_NAME="wh_example"
@@ -26,7 +27,6 @@ git clone git@github.com:JosiahBLB/rmf_template.git ~/projects/"$NEW_PRJ_NAME"_w
 cd ~/projects/"$NEW_PRJ_NAME"_ws
 ```
 
-## Setup
 Initialize and download the submodules
 ```sh
 git submodule update --init --recursive
