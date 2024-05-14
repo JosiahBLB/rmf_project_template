@@ -51,7 +51,7 @@ Source the project
 source install/setup.bash
 ```
 
-Launch the world
+Launch the example world
 ```sh
 ros2 launch "$NEW_PRJ_NAME"_gz_classic simple_warehouse.launch.xml
 ```
