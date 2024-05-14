@@ -1,4 +1,5 @@
-# Final Year Project
+# RMF Template
+The purpose of this repository is to give a solid starting point to those looking at integrating RMF into their own environments.
 
 ## Dependencies
 This project requires that you are running Ubuntu 22.04 and ROS2 Humble Hawksbill.
@@ -14,23 +15,29 @@ See the [ROS2 Humble Hawksbill installation guide](https://docs.ros.org/en/humbl
 sudo apt install rename
 ```
 
-## Setup
-Initialize and download the submodules
-```sh
- git submodule update --init --recursive
-```
-
 Choose a name for your project
 ```sh
 export NEW_PRJ_NAME="wh_example"
 ```
 
+## Create and navigate to your ROS2 workspace
+```sh
+git clone git@github.com:JosiahBLB/rmf_template.git ~/projects/"$NEW_PRJ_NAME"_ws
+cd ~/projects/"$NEW_PRJ_NAME"_ws
+```
+
+## Setup
+Initialize and download the submodules
+```sh
+git submodule update --init --recursive
+```
+
 Rename the project
 ```sh
-# rename all occurances of "prj_name" in files
+# replace all occurances of "prj_name" inside file contents
 grep -rl prj_name src | xargs sed -i "s/prj_name/$NEW_PRJ_NAME/g"
 
-# rename all files and folder names with "prj_name
+# replace all occurances of "prj_name" in files and folder names
 find src -name '*prj_name*' -execdir rename 's/prj_name/'"$NEW_PRJ_NAME"'/' '{}' \+
 ```
 
