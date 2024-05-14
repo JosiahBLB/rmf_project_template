@@ -1,4 +1,4 @@
-# RMF Template
+# RMF Project Template
 The purpose of this repository is to give a solid starting point to those looking at integrating RMF into their own environments.
 
 ## Dependencies
