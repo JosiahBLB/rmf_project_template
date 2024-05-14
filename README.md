@@ -5,9 +5,8 @@ The purpose of this repository is to give a solid starting point to those lookin
 This project requires that you are running Ubuntu 22.04 and ROS2 Humble Hawksbill.
 See the [ROS2 Humble Hawksbill installation guide](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
 
-| :warning: WARNING           |
-|:----------------------------|
-| In the ROS2 installation instructions there is a choice between `ros-humble-desktop` and `ros-humble-ros-base`. However, you **MUST** install both for this package to work   |
+> :warning: WARNING
+> In the ROS2 installation instructions there is a choice between `ros-humble-desktop` and `ros-humble-ros-base`. However, you **MUST** install both for this package to work
 
 
 ### Other Dependencies
@@ -55,3 +54,12 @@ Launch the example world
 ```sh
 ros2 launch "$NEW_PRJ_NAME"_gz_classic simple_warehouse.launch.xml
 ```
+
+# Getting Started
+
+Once you have confirmed the project can run, it is then time to start configuring your new project to suit your specific implementation.
+
+> :memo: REMEMBER
+> To get access to the environment variables specific to your ROS2 workstation you must source your terminal by running `source install/setup.bash` or `source install/setup.<your_shell>`. See the `install` directory for supported shells.
+
+## Step 1: Designing your World in Traffic Editor
