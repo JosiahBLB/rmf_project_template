@@ -85,7 +85,7 @@ From this point you can start to build your world using:
 - Select (`Esc`): Select components to give them additional parameters i.e. for nodes: pickup, drop-off, charging station etc.
 
 ## Step 3: Fleet Configuration
-The next stage is to add your fleet configuration files in `src/"$PRJ"/config/<your_map_name>` which describe the parameters and capabilities of the robots in each fleet. Another step is to configure the fleet adapter to your fleet managers API, which the `fleet_adapter.py` is already configured for the RMF supplied robots and be used straight away.
+The next stage is to add your fleet configuration files in `src/"$PRJ"/config/<your_map_name>` which describe the parameters and capabilities of the robots in each fleet. Another step is to configure the fleet adapter to your fleet managers API, which the `fleet_adapter.py` is already configured for the RMF supplied robots and can be used straight away.
 
 ## Step 4: Launch Files
 The `CMakeLists.txt` file found in packages often installs files at build-time allowing for users to execute custom launch files. We have already done this at the start! We launched the `simple_warehouse` using:
