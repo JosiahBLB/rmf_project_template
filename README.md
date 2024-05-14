@@ -72,7 +72,7 @@ Although the RMF documentation is generally outdated, using [this](https://osrf.
 2. Click: <ins>B</ins>uilding $\rightarrow$ <ins>N</ins>ew
 3. Save your map under `src/"$PRJ"/"$PRJ"_maps/maps/<your_map_name>/<your_map_name>.building.yaml`
 4. Ensure to check `Reference-image coordinates` when the option pops up
-5. Save a floor plan `.png` image in the same location named `<your_map_name>.png`
+5. Save a floor plan `.png` image in the same location, named `<your_map_name>.png`
 6. Click `Add` on the right-hand side under the `levels` tab and name it `L1` for level 1 and add your reference image
 7. Click the pink line tool or press `T` to add a reference measurement to your map
 8. Click Select or press `Esc` and then click this line to open its properties where you can define its length
