@@ -93,3 +93,7 @@ The `CMakeLists.txt` file found in packages often installs files at build-time a
 ros2 launch "$PRJ"_gz_classic simple_warehouse.launch.xml
 ```
 To really drive it home, thats the `simple_warehouse.launch.xml` launch script defined in `"$PRJ"_gz_classic`. There are a number of launch files that are required, one in `src/"$PRJ"/launch/<your_map_name>.launch.xml` which is executed by another found in `src/"$PRJ"_gz_classic/launch/<your_map_name>.launch.xml`. You will find that each of these both call a common launch file, which runs all the basic RMF and Gazebo functionality. It is useful to know that runtime environment variables are also set within these launch files such as the previously mentioned `$GAZEBO_MODEL_PATH`.
+
+## Step 5: ???
+
+## Step 6: Profit
